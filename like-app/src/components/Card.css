@@ -1,0 +1,12 @@
+.card{
+    display: flex;
+    padding: 10%;
+    /* background-color: red; */
+    flex-direction: column;
+}
+
+
+.like-comment{
+    display: flex;
+    justify-content: space-between;
+}
