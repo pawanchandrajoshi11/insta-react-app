@@ -4,8 +4,8 @@ import CommentComponent from "./CommentComponent";
 
 function Comment() {
   const [like, setLike] = useState(0);
-  const [isLiked, setIsLiked] = useState(false);
-  const [comments, setComments] = useState([]);
+  const [isLiked, setIsLiked] = useState(false);// one like only
+  const [comments, setComments] = useState([]); // not used
 
   const handleCommentSubmit = (newComment) => {
     setComments([...comments, newComment]);
@@ -33,7 +33,7 @@ function Comment() {
           style={{ fontSize: "20px", padding: "10px" }}
         ></i>
         {like}
-      </h2>
+    </h2>
     <CommentComponent/>
       {/* <h1>
         <i
